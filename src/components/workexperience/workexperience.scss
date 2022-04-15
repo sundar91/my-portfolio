@@ -1,0 +1,46 @@
+.container.workexperience__container {
+    width: 40%;
+
+    h3 {
+        color: var(--color-primary);
+        text-align: center;
+    }
+
+    .project {
+        background: var(--color-bg-variant);
+        padding: 2rem;
+        border-radius: 2rem;
+        user-select: none;
+       
+
+        .project__info {
+            width: 80%;
+        }
+
+        .project__responsibilities,
+        .project__overview{
+            color: var(--color-light);
+            font-weight: 300;
+            display: block;
+            margin:0.8rem auto 0;
+        }
+
+        .project__responsibilities li{
+            list-style: circle;
+        }
+
+        .project__technologies{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+
+            span {
+                flex: content;
+                border: 1px solid var(--color-bg-variant);
+                color: var(--color-bg);
+                background: var(--color-primary);
+                padding: 0.5rem;
+            }
+        }
+    }
+}
