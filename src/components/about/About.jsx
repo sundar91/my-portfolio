@@ -5,13 +5,14 @@ import Profile from '../../assets/me-about.jpg';
 
 import './about.scss';
 
-const About = () => {
+const About = () =>
+{
   return (
-    <section id="about"> 
+    <section id="about">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div className='container about__container'>
+      <div className='container about__container pg-section'>
         <div className="about__me">
           <img src={Profile} alt="me"></img>
         </div>
@@ -38,12 +39,8 @@ const About = () => {
             I am an experienced professional in the development of web-based applications using technologies such as .NET Core, .NET Framework, C#, ASP.NET MVC, REST Services, Web API, etc. I also have experience in requirement gathering, design, development, and deployment of software products. I offers expertise in agile methodology across energy and utilities domains.
           </p>
 
-          <p>
-            
-          </p>
-
           <a href='#contact' className='btn btn-primary'>Let's Talk</a>
-          
+
         </div>
       </div>
     </section>

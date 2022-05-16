@@ -1,39 +1,47 @@
-import { faBook, faCertificate, faContactCard, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { MdWork, MdHome, MdContactPhone } from 'react-icons/md'
+import { FaUserAlt, FaBook, FaCertificate } from 'react-icons/fa'
 import React, { useState } from 'react'
+import { Link } from 'react-scroll'
 
 import './nav.scss';
 
-const Nav = () => {
+const Nav = () =>
+{
   const [activeNav, setActiveNav] = useState('#');
 
   return (
     <nav>
-      <a href='#' 
-      className= {activeNav === "#" ? 'active': ''}
-      onClick={()=> setActiveNav('#')}>
-        <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
-      </a>
-      <a href='#about' 
-      className= {activeNav === "#about" ? 'active': ''}
-      onClick={()=> setActiveNav('#about')}>
-        <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
-      </a>
-      <a href='#experience'
-       className= {activeNav === "#experience" ? 'active': ''}
-       onClick={()=> setActiveNav('#experience')}>
-        <FontAwesomeIcon icon={faBook}></FontAwesomeIcon>
-      </a>
-      <a href='#certifications'  
-      className= {activeNav === "#certifications" ? 'active': ''}
-      onClick={()=> setActiveNav('#certifications')}>
-        <FontAwesomeIcon icon={faCertificate}></FontAwesomeIcon>
-      </a>
-      <a href='#contact' 
-      className= {activeNav === "#contact" ? 'active': ''}
-      onClick={()=> setActiveNav('#contact')}>
-        <FontAwesomeIcon icon={faContactCard}></FontAwesomeIcon>
-      </a>
+      <Link to="home"
+        activeClass='active'
+        spy={true} smooth={true}
+        onClick={() => setActiveNav('#')}>
+        <MdHome className='nav-icon' />
+      </Link>
+      <Link to='about'
+        spy={true} smooth={true}
+        activeClass="active">
+        <FaUserAlt className='nav-icon' />
+      </Link>
+      <Link to='skills'
+        activeClass="active"
+        spy={true} smooth={true}>
+        <FaBook className='nav-icon' />
+      </Link>
+      <Link to='certifications'
+        activeClass='active'
+        spy={true} smooth={true}>
+        <FaCertificate className='nav-icon' />
+      </Link>
+      <Link to='workexperience'
+        activeClass="active"
+        spy={true} smooth={true}>
+        <MdWork className='nav-icon' />
+      </Link>
+      <Link to='contact'
+        activeClass='active'
+        spy={true} smooth={true}>
+        <MdContactPhone className='nav-icon' />
+      </Link>
     </nav>
   )
 }

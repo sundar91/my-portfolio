@@ -4,53 +4,54 @@ import React from 'react'
 
 import './skills.scss'
 
-const Skills = () => {
+const Skills = () =>
+{
   return (
-    <section id="experience">
+    <section id="skills">
       <h5>Skills I Have</h5>
       <h2>My Experience</h2>
 
-      <div className="container experience__container">
+      <div className="container experience__container pg-section">
         <div className="experience__frontend">
           <h3> Frontend Development</h3>
           <div className="experience__content">
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details__icon'/>
+              <BsPatchCheckFill className='experience__details__icon' />
               <div>
                 <h4>HTML</h4>
                 <small>Experienced</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details__icon'/>
+              <BsPatchCheckFill className='experience__details__icon' />
               <div>
                 <h4>CSS</h4>
                 <small>Intermediate</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details__icon'/>
+              <BsPatchCheckFill className='experience__details__icon' />
               <div>
                 <h4>Javascript</h4>
                 <small>Experienced</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details__icon'/>
+              <BsPatchCheckFill className='experience__details__icon' />
               <div>
                 <h4>Bootstrap</h4>
                 <small>Experienced</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details__icon'/>
+              <BsPatchCheckFill className='experience__details__icon' />
               <div>
                 <h4>React</h4>
                 <small>Experienced</small>
               </div>
             </article>
             <article className='experience__details'>
-            <BsPatchCheckFill className='experience__details__icon'/>
+              <BsPatchCheckFill className='experience__details__icon' />
               <div>
                 <h4>Angular</h4>
                 <small>Experienced</small>
@@ -60,53 +61,53 @@ const Skills = () => {
 
         </div>
         <div className="experience__backend">
-        <h3> Backend Development</h3>
+          <h3> Backend Development</h3>
           <div className="experience__content">
             <article className='experience__details'>
-                <BsPatchCheckFill className='experience__details__icon'/>
-                <div>
-                  <h4>.NET Core</h4>
-                  <small>Experienced</small>
-                </div>
+              <BsPatchCheckFill className='experience__details__icon' />
+              <div>
+                <h4>.NET Core</h4>
+                <small>Experienced</small>
+              </div>
             </article>
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details__icon'/>
+              <BsPatchCheckFill className='experience__details__icon' />
               <div>
                 <h4>SQL Server</h4>
                 <small>Experienced</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details__icon'/>
+              <BsPatchCheckFill className='experience__details__icon' />
               <div>
                 <h4>Kubernetes</h4>
                 <small>Experienced</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details__icon'/>
+              <BsPatchCheckFill className='experience__details__icon' />
               <div>
                 <h4>Docker</h4>
                 <small>Experienced</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details__icon'/>
+              <BsPatchCheckFill className='experience__details__icon' />
               <div>
                 <h4>Azure</h4>
                 <small>Intermediate</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details__icon'/>
+              <BsPatchCheckFill className='experience__details__icon' />
               <div>
                 <h4>Microservices</h4>
                 <small>Basic</small>
               </div>
             </article>
-           
+
           </div>
-        </div> 
+        </div>
       </div>
 
     </section>

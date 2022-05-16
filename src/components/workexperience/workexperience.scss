@@ -1,46 +1,117 @@
 .container.workexperience__container {
-    width: 40%;
+    width: 65%;
 
     h3 {
         color: var(--color-primary);
         text-align: center;
     }
 
-    .project {
+    .swiper-pagination-clickable {
+        .swiper-pagination-bullet-active {
+            color: --var(--color-primary);
+        }
+    }
+
+    .work__experience {
+        position: relative;
         background: var(--color-bg-variant);
         padding: 2rem;
         border-radius: 2rem;
         user-select: none;
-       
+        min-height: 490px;
 
-        .project__info {
-            width: 80%;
+        h5,
+        h3 {
+            text-align: center;
         }
 
-        .project__responsibilities,
-        .project__overview{
+
+        .work__experience_details {
+            padding: 2rem;
+        }
+
+        .work__experience_duration {
+            color: var(--color-white);
+            position: absolute;
+            right: 2rem;
+            font-size: 14px;
+        }
+
+        .work__experience__responsibilities {
             color: var(--color-light);
             font-weight: 300;
             display: block;
-            margin:0.8rem auto 0;
+            margin: 0.8rem auto 0;
+            padding-left: 20px;
+
+            li {
+
+                list-style: circle;
+            }
         }
 
-        .project__responsibilities li{
-            list-style: circle;
-        }
-
-        .project__technologies{
+        .project__technologies {
+            padding-top: 2rem;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 1rem;
 
             span {
                 flex: content;
                 border: 1px solid var(--color-bg-variant);
-                color: var(--color-bg);
+                color: var(--color-white);
                 background: var(--color-primary);
                 padding: 0.5rem;
+                text-align: center;
+                align-items: center;
+                display: grid;
             }
         }
     }
+}
+
+/* MEDIUM DEVICES */
+@media screen and (max-width: 1024px) {
+    .container.workexperience__container {
+        width: 70%;
+
+        .work__experience {
+            .work__experience_duration {
+                position: relative;
+                right: 0;
+
+                &::before {
+                    content: "\A";
+                    white-space: pre;
+                }
+            }
+        }
+    }
+
+}
+
+/* SMALL DEVICES */
+@media screen and (max-width: 600px) {
+    .container.workexperience__container {
+        width: var(--container-width-sm);
+
+        .work__experience {
+            .work__experience_duration {
+                position: relative;
+                right: 0;
+
+                &::before {
+                    content: "\A";
+                    white-space: pre;
+                }
+            }
+
+            .project__technologies {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+    }
+
 }
