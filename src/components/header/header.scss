@@ -23,6 +23,7 @@ header {
         .header__wave {
             display: inline-block;
             font-size: 3rem;
+            margin: 0 10px;
             animation-name: wave-hand;
             animation-duration: 2.5s;
             animation-iteration-count: infinite;
@@ -73,6 +74,7 @@ header {
             transform: rotate(90deg);
             font-weight: 200;
             font-size: 0.9rem;
+            cursor: pointer;
         }
 
     }

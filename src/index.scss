@@ -74,6 +74,7 @@ h1 {
 
 section {
     margin-top: 8rem;
+    padding-top: 50px;
 }
 
 section>h2,
@@ -148,9 +149,8 @@ img {
 
     section {
         margin-top: 6rem;
+        padding-top: 10px;
     }
-
-    ;
 }
 
 /* SMALL DEVICES */
@@ -159,9 +159,13 @@ img {
         width: var(--container-width-sm);
     }
 
+    section {
+        padding-top: 5px;
+    }
+
     section>h2 {
         margin-top: 2rem;
     }
 
-    ;
+
 }

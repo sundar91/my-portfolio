@@ -1,11 +1,17 @@
 import React from 'react'
 import CV from '../../assets/cv.pdf';
+import { Link } from 'react-scroll'
 
-function CTA() {
+function CTA()
+{
   return (
     <div className='cta'>
-        <a href={CV} className="btn">Download CV</a>
-        <a href='#contact' className='btn btn-primary'> Let's Talk</a>
+      <a href={CV} target="_blank" rel="noreferrer" className="btn">Download CV</a>
+      <Link to='contact'
+        className='btn btn-primary'
+        spy={true} smooth={true}>
+        Let's Talk
+      </Link>
     </div>
   )
 }
