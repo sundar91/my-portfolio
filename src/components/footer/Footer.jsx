@@ -1,6 +1,7 @@
 import React from 'react'
 import { FiInstagram } from 'react-icons/fi'
 import { IoLogoTwitter } from 'react-icons/io'
+import { Link } from 'react-scroll';
 
 import './footer.scss'
 import logo from '../../assets/logo.png'
@@ -12,12 +13,43 @@ const Footer = () =>
         <img src={logo} alt="logo"></img>
       </a>
       <ul className='permalinks'>
-        <li> <a href='#'>Home</a></li>
-        <li> <a href='#about'>About</a></li>
-        <li> <a href='#skills'>Skills</a></li>
-        <li> <a href='#certifications'>Certifications</a></li>
-        <li> <a href='#workexperience'>Experience</a></li>
-        <li> <a href='#contact'>Contact</a></li>
+
+        <li>
+          <Link to="home"
+            smooth={true}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="about"
+            smooth={true}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="skills"
+            smooth={true}>
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link to="certifications"
+            smooth={true}>
+            Certifications
+          </Link>
+        </li>
+        <li>
+          <Link to="workexperience"
+            smooth={true}>
+            Experience
+          </Link>
+        </li>
+        <li>
+          <Link to="contact"
+            smooth={true}>
+            Contact
+          </Link>
+        </li>
       </ul>
       <div className="footer__socials">
         <a href='https://instagram.com/thesundarsingh' target={'_blank'} rel="noreferrer">

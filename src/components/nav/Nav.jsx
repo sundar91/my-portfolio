@@ -7,14 +7,11 @@ import './nav.scss';
 
 const Nav = () =>
 {
-  const [activeNav, setActiveNav] = useState('#');
-
   return (
     <nav>
       <Link to="home"
         activeClass='active'
-        spy={true} smooth={true}
-        onClick={() => setActiveNav('#')}>
+        spy={true} smooth={true}>
         <MdHome className='nav-icon' />
       </Link>
       <Link to='about'
